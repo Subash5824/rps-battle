@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+:root{
+     /* dark clr choose */
+     --clr-primary-0:hsl(78, 100%, 60%);
+     --clr-primary-1:hsl(17, 92%, 53%);
+     --clr-primary-2:hsl(66, 46%, 56%);
+     --clr-primary-3:hsl(53, 98%, 65%);
+
+}
+body{
+    background-image:url("./img/bg.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:grid;
+    background-position:top;
+    min-height:100vh;
+    
+}
+.box{
+   display: grid;
+   grid-auto-flow: column;
+  justify-content: space-around;
+  padding-bottom: 5px;
+}
+.player{
+   
+    display: grid;
+    grid-auto-flow:row;
+    justify-items: center;  
+    align-items: flex-start;
+    margin-bottom:1rem; 
+   
+}
+#user img{
+    margin:0px;
+    border-radius:150rem;
+}
+#txt{
+    font-size:1.5em;
+    font-weight:bolder;
+    color:#2d07b7;
+    background-color: rgb(254, 249, 229);
+    border-radius:15px;
+}
+.start{ 
+    display: grid;
+    grid-auto-flow:row;
+    justify-items:center;  
+    align-content: center;
+     margin-left:10rem;
+     
+}
+.start img{
+    border-radius:5rem;
+}
+.pc{
+     
+    display: grid;
+    grid-auto-flow:row;
+    justify-items: center;  
+    align-items:flex-start;
+    margin-bottom:1rem; 
+    
+}
+    
+#lap img{
+    margin:0px;
+    border-radius:150rem;
+    
+}
+#txtpc{
+    
+    font-size:1.5em;
+    font-weight:bolder;
+    color: #2d07b7;
+    background-color: rgb(254, 249, 229);
+    border-radius:15px;
+    margin-bottom: 0px;   
+}
+#perform  {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+}
+.item img {
+    border-radius:1rem; 
+    
+}
+.rock:hover{
+  transform:scale(1.2);
+  z-index:1;
+  cursor: pointer;
+  
+}
+.paper:hover{
+  transform:scale(1.2);
+  z-index:1;
+  cursor: pointer;
+}.scissor:hover{
+  transform:scale(1.2);
+  z-index:1;
+  cursor: pointer;
+}
+.start img:hover{
+transform:scale(1.2);
+  z-index:1;
+  cursor: pointer;
+}
+.popup{
+     width:18rem;
+     height:8rem;
+     background: rgb(253, 227, 179);
+     border-radius: 10px;
+     position:fixed;
+     top: 50%;
+     left:41%;
+     right: 0%;
+     transition: all 0.3s ease-in-out;
+     z-index:1;
+     font-size:19px;
+     text-align: center;
+     padding:0px 3px ;
+     visibility: hidden;
+    
+}
+.popupplay{
+    margin: 20px 0 10px;
+    color:rgb(35, 21, 0);
+     font-size:25px;
+
+}
+.popup button{
+    width:25%;
+    height: 25%;
+    font-size:20px;
+    background: rgb(92, 74, 255);
+    outline: none;
+    border: 0;
+    color:black;
+    font-weight:bold;
+    border-radius: 8px;
+    
+}
+
+.popup button:hover{
+    transform:scale(1.2);
+  z-index:1;
+  cursor: pointer;
+}
+.popup.open{
+    opacity:1;
+     z-index:111;
+    position: absolute;
+    top: 50%;
+    bottom: 10%;
+    visibility:visible;
+}
